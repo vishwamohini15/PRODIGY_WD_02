@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        
+
+        <div class="boxes">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+    
+    <div class="toxes">
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+    </div> -->
+    
+    .container{
+        height: 100vh;
+        width: 100vw;
+    background-color: lightskyblue;
+    padding: 5vw 8vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+    }
+    .boxes{
+    height: 100vh;
+    width: 50vw;
+    background:linear-gradient(blue,greenyellow);
+    position: relative;
+    filter: blur(20px);
+    
+    }
+    .box1{
+        height: 90%;
+        width: 90%;
+        background-color: blue;
+        position: absolute;
+        border-radius: 50%;
+       animation-name: anime1;
+       animation-iteration-count: infinite;
+       animation-duration: 3s;
+    filter: blur(20px);
+       
+    }
+    .box2{
+        height: 80%;
+        width: 80%;
+        background-color: greenyellow;
+        position: absolute;
+        border-radius: 50%;
+    animation-name: anime2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    filter: blur(20px);
+    }
+    .toxes{
+        height: 100vh;
+    width: 50vw;
+    background:linear-gradient(yellow,#f92672);
+    position: relative;
+    filter: blur(20px);
+    }
+    .box3{
+        height: 90%;
+        width: 90%;
+        background-color:yellow;
+        position: absolute;
+        border-radius: 50%;
+        animation-name: anime1;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+     filter: blur(20px);
+    }
+    .box4{
+        height: 80%;
+        width: 80%;
+        background-color:#f92672;
+        position: absolute;
+        border-radius: 50%;
+        animation-name: anime2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    filter: blur(20px);
+    
+    }
+    
+    @keyframes anime1 {
+        from{
+            transform: translate(-10%,10%);
+        }
+        to{
+            transform: translate(10%,-10%);
+    
+        }
+    }
+    
+    @keyframes anime2 {
+        from{
+            transform: translate(10%,-10%);
+        }
+        to{
+            transform: translate(-10%,10%);
+    
+        }
+    }
+    
+    <iframe  src="https://my.spline.design/untitled-7e90d1770de5fe25b7e67ad85922ee69/" frameborder="0"></iframe>
+</body>
+</html>
